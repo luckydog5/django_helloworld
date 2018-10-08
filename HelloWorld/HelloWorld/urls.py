@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from . import view
+from . import view,dbtest
 
 urlpatterns = [
     url(r'^$', view.hello),
+    url(r'^dbtest$', dbtest.testdb),
 ]
